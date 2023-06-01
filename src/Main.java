@@ -25,8 +25,8 @@ public class Main {
 
         //ŘÍPRAVA REZERVACÍ
 
-        Booking booking1 = new Booking(Arrays.asList(adelaMalikova1993), firstRoom, "19.7.2021", "26.7.2021", "Work vacation");
-        Booking booking2 = new Booking(Arrays.asList(adelaMalikova1993, janDvoracek1995), thirdRoom, "1.9.2021", "14.9.2021", "Recreational vacation");
+        Booking booking1 = new Booking(Arrays.asList(adelaMalikova1993), firstRoom, "19.7.2021", "26.7.2021", Booking.TypeOfVacation.WORK);
+        Booking booking2 = new Booking(Arrays.asList(adelaMalikova1993, janDvoracek1995), thirdRoom, "1.9.2021", "14.9.2021", Booking.TypeOfVacation.RECREATION);
 
         //DEKLARACE
 
@@ -40,8 +40,7 @@ public class Main {
         //VYPSÁNÍ REZERVACÍ
 
         for (Booking booking : listOfBookings){
-            System.out.println("Booking: " + booking.getDateOfVacation() + " Guests: " + booking.getGuest());
+            System.out.println("Booking: " + booking.getDateOfVacation() + " Guests: " + booking.getGuest() + "Typ dovolené: " + booking.typeOfVacation);
         }
-
     }
 }

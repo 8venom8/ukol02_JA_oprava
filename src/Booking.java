@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.List;
 
 public class Booking {
@@ -5,16 +6,24 @@ public class Booking {
     Room room;
     String checkInDay;
     String checkOutDay;
-    String typeOfVacation;
+    TypeOfVacation typeOfVacation;
+
+    public enum TypeOfVacation {
+        WORK,
+        RECREATION
+    }
+
+
 
     //CONSTRUCTOR
-    public Booking(List<Guest> guest, Room room, String checkInDay, String checkOutDay, String typeOfVacation) {
+    public Booking(List<Guest> guest, Room room, String checkInDay, String checkOutDay, TypeOfVacation typeOfVacation) {
         this.guest = guest;
         this.room = room;
         this.checkInDay = checkInDay;
         this.checkOutDay = checkOutDay;
         this.typeOfVacation = typeOfVacation;
     }
+
 
     //GETTER AND SETTER
     public List<Guest> getGuest() {
@@ -53,11 +62,16 @@ public class Booking {
         this.checkOutDay = checkOutDay;
     }
 
-    public String getTypeOfVacation() {
+    public TypeOfVacation getTypeOfVacation() {
         return typeOfVacation;
     }
 
-    public void setTypeOfVacation(String typeOfVacation) {
+    public void setTypeOfVacation(TypeOfVacation typeOfVacation) {
         this.typeOfVacation = typeOfVacation;
+    }
+
+    @Override
+    public String toString() {
+        return "typeOfVacation: " + typeOfVacation;
     }
 }
