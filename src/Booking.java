@@ -24,6 +24,13 @@ public class Booking {
         this.typeOfVacation = typeOfVacation;
     }
 
+    public Booking(List<Guest> guest) {
+        this.guest = guest;
+        LocalDate currentDate = LocalDate.now();
+        checkInDay = currentDate.toString();
+        this.checkOutDay = currentDate.plusDays(6).toString();
+        this.typeOfVacation = TypeOfVacation.RECREATION;
+    }
 
     //GETTER AND SETTER
     public List<Guest> getGuest() {

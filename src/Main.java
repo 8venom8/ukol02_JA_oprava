@@ -27,6 +27,7 @@ public class Main {
 
         Booking booking1 = new Booking(Arrays.asList(adelaMalikova1993), firstRoom, "19.7.2021", "26.7.2021", Booking.TypeOfVacation.WORK);
         Booking booking2 = new Booking(Arrays.asList(adelaMalikova1993, janDvoracek1995), thirdRoom, "1.9.2021", "14.9.2021", Booking.TypeOfVacation.RECREATION);
+        Booking booking3 = new Booking(Arrays.asList(janDvoracek1995));
 
         //DEKLARACE
 
@@ -36,6 +37,7 @@ public class Main {
 
         listOfBookings.add(booking1);
         listOfBookings.add(booking2);
+        listOfBookings.add(booking3);
 
         //VYPSÁNÍ REZERVACÍ
 
