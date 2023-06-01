@@ -8,8 +8,6 @@ public class Room {
     BigDecimal priceForOneNight;
 
     //CONSTRUCTOR
-
-
     public Room(int number, int numberOfBed, boolean isThereBalcony, boolean isThereSeaView, BigDecimal priceForOneNight) {
         this.number = number;
         this.numberOfBed = numberOfBed;

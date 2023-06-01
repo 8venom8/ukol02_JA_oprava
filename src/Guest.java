@@ -7,8 +7,6 @@ public class Guest {
     LocalDate birthDate;
 
     //CONSTRUCTOR
-
-
     public Guest(String name, String lastName, LocalDate birthDate) {
         this.name = name;
         this.lastName = lastName;
