@@ -13,6 +13,10 @@ public class Guest {
         this.birthDate = birthDate;
     }
 
+    public Guest(String name) {
+        this.name = name;
+    }
+
     //GETTER AND SETTER
     public String getName() {
         return name;

@@ -34,6 +34,11 @@ public class Room {
     }
 
     public boolean isThereBalcony() {
+        if(!isThereBalcony){
+            System.out.println("ne");
+        } else {
+            System.out.println("ano");
+        }
         return isThereBalcony;
     }
 
@@ -41,8 +46,12 @@ public class Room {
         isThereBalcony = thereBalcony;
     }
 
-    public boolean isThereSeaView() {
-        return isThereSeaView;
+    public String isThereSeaView() {
+        if(!isThereSeaView){
+            return "ne";
+        } else {
+            return "ano";
+        }
     }
 
     public void setThereSeaView(boolean thereSeaView) {

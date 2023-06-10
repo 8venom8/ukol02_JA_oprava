@@ -4,8 +4,9 @@ import java.util.List;
 public class Booking {
     List<Guest> guest; //k ukládání hostů k rezervaci
     Room room;
-    String checkInDay;
-    String checkOutDay;
+    LocalDate checkInDate;
+    LocalDate checkOutDate;
+
     TypeOfVacation typeOfVacation;
 
     public enum TypeOfVacation {
@@ -16,19 +17,19 @@ public class Booking {
 
 
     //CONSTRUCTOR
-    public Booking(List<Guest> guest, Room room, String checkInDay, String checkOutDay, TypeOfVacation typeOfVacation) {
+    public Booking(List<Guest> guest, Room room, LocalDate checkInDay, LocalDate checkOutDay, TypeOfVacation typeOfVacation) {
         this.guest = guest;
         this.room = room;
-        this.checkInDay = checkInDay;
-        this.checkOutDay = checkOutDay;
+        this.checkInDate = checkInDay;
+        this.checkOutDate = checkOutDay;
         this.typeOfVacation = typeOfVacation;
     }
 
     public Booking(List<Guest> guest) {
         this.guest = guest;
         LocalDate currentDate = LocalDate.now();
-        checkInDay = currentDate.toString();
-        this.checkOutDay = currentDate.plusDays(6).toString();
+        checkInDate = currentDate;
+        this.checkOutDate = currentDate.plusDays(6);
         this.typeOfVacation = TypeOfVacation.RECREATION;
     }
 
@@ -38,7 +39,7 @@ public class Booking {
     }
 
     public String getDateOfVacation(){
-        return checkInDay + " - " + checkOutDay;
+        return checkInDate + " - " + checkOutDate;
     }
 
     public void setGuest(List<Guest> guest) {
@@ -53,20 +54,20 @@ public class Booking {
         this.room = room;
     }
 
-    public String getCheckInDay() {
-        return checkInDay;
+    public LocalDate getCheckInDate() {
+        return checkInDate;
     }
 
-    public void setCheckInDay(String checkInDay) {
-        this.checkInDay = checkInDay;
+    public void setCheckInDate(LocalDate checkInDate) {
+        this.checkInDate = checkInDate;
     }
 
-    public String getCheckOutDay() {
-        return checkOutDay;
+    public LocalDate getCheckOutDate() {
+        return checkOutDate;
     }
 
-    public void setCheckOutDay(String checkOutDay) {
-        this.checkOutDay = checkOutDay;
+    public void setCheckOutDate(LocalDate checkOutDate) {
+        this.checkOutDate = checkOutDate;
     }
 
     public TypeOfVacation getTypeOfVacation() {
