@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="013ae6eb-e892-4d2b-b561-48836f3b6dfa" name="Changes" comment="ukol03">
+    <list default="true" id="013ae6eb-e892-4d2b-b561-48836f3b6dfa" name="Changes" comment="oprava metody getListOfBookings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686390127570</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="oprava metody getListOfBookings">
+      <created>1686809912269</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686809912269</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -101,7 +106,8 @@
     <MESSAGE value="přidání enum" />
     <MESSAGE value="automatické přidání termínu" />
     <MESSAGE value="ukol03" />
-    <option name="LAST_COMMIT_MESSAGE" value="ukol03" />
+    <MESSAGE value="oprava metody getListOfBookings" />
+    <option name="LAST_COMMIT_MESSAGE" value="oprava metody getListOfBookings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -127,12 +127,19 @@ public class Main {
 
         //VYPSÁNÍ VŠECH REZERVACÍ VE FORTMÁTU- pokulhává to ve výpisu boolean hodnot
 
-        for (Booking booking : bookingManager.getListOfbookings()){
-            System.out.println(booking.getCheckInDate() + " až " +
-                    booking.getCheckOutDate() + ": " + booking.getGuest() +
-                    " (" + booking.getGuest().get(0).getBirthDate() +
-                    ") [" + booking.getRoom().getNumberOfBed() + " , "
-                    + booking.getRoom().isThereBalconyToString() + " ]");
+
+        List<Booking> listOfBookings = bookingManager.getListOfbookings();
+
+        if(listOfBookings.isEmpty()){
+            System.out.println("Seznam je prázdný");
+        } else{
+            for (Booking booking : bookingManager.getListOfbookings()){
+                    System.out.println(booking.getCheckInDate() + " až " +
+                            booking.getCheckOutDate() + ": " + booking.getGuest() +
+                            " (" + booking.getGuest().get(0).getBirthDate() +
+                            ") [" + booking.getRoom().getNumberOfBed() + " , "
+                            + booking.getRoom().isThereBalconyToString() + " ]");
+             }
         }
 
 
