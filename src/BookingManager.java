@@ -94,7 +94,7 @@ public class BookingManager {
         listOfbookingManager.add(booking);
     }
 
-    public List<Booking> getListOfbookingManager() {
-        return listOfbookingManager;
+    public List<Booking> getListOfbookings() {
+        return List.copyOf(listOfbookingManager);
     }
 }

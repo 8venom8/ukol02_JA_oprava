@@ -110,7 +110,7 @@ public class Main {
 
         //VÝPIS REZERVACÍ
 
-        for (Booking booking : bookingManager.getListOfbookingManager()) {
+        for (Booking booking : bookingManager.getListOfbookings()) {
             System.out.println("Booking: " + booking.getDateOfVacation() +
                     " Guests: " + booking.getGuest() + "Typ dovolené: "
                     + booking.typeOfVacation);
@@ -127,21 +127,21 @@ public class Main {
 
         //VYPSÁNÍ VŠECH REZERVACÍ VE FORTMÁTU- pokulhává to ve výpisu boolean hodnot
 
-        for (Booking booking : bookingManager.getListOfbookingManager()){
+        for (Booking booking : bookingManager.getListOfbookings()){
             System.out.println(booking.getCheckInDate() + " až " +
                     booking.getCheckOutDate() + ": " + booking.getGuest() +
                     " (" + booking.getGuest().get(0).getBirthDate() +
                     ") [" + booking.getRoom().getNumberOfBed() + " , "
-                    + booking.getRoom().isThereBalcony() + " ]");
+                    + booking.getRoom().isThereBalconyToString() + " ]");
         }
 
 
         //PRŮMĚRNÝ POČET REZERVACÍ NA JEDNU OSOBU
 
         int totalGuest = 0;
-        int totalReservation = bookingManager.getListOfbookingManager().size();
+        int totalReservation = bookingManager.getListOfbookings().size();
 
-        for (Booking booking : bookingManager.getListOfbookingManager()){
+        for (Booking booking : bookingManager.getListOfbookings()){
             totalGuest = totalGuest + booking.getGuest().size();
             totalReservation++;
         }
@@ -168,7 +168,7 @@ public class Main {
 
         //VÝPOČET NOCÍ NA JEDNU REZERVACI
 
-        for (Booking booking : bookingManager.getListOfbookingManager()) {
+        for (Booking booking : bookingManager.getListOfbookings()) {
 
             bookingManager.getNumberOfNightsPerReservation(booking);
         }

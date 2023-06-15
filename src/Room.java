@@ -33,11 +33,11 @@ public class Room {
         this.numberOfBed = numberOfBed;
     }
 
-    public boolean isThereBalcony() {
-        if(!isThereBalcony){
-            System.out.println("ne");
-        } else {
+    public boolean isThereBalconyToString() {
+        if(isThereBalcony){
             System.out.println("ano");
+        } else {
+            System.out.println("ne");
         }
         return isThereBalcony;
     }

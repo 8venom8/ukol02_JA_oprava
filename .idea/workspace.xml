@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="013ae6eb-e892-4d2b-b561-48836f3b6dfa" name="Changes" comment="automatické přidání termínu">
-      <change afterPath="$PROJECT_DIR$/src/BookingManager.java" afterDir="false" />
+    <list default="true" id="013ae6eb-e892-4d2b-b561-48836f3b6dfa" name="Changes" comment="ukol03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BookingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookingManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
@@ -88,14 +86,22 @@
       <option name="project" value="LOCAL" />
       <updated>1685617670734</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ukol03">
+      <created>1686390127570</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686390127570</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="oprava ukolu 02" />
     <MESSAGE value="přidání enum" />
     <MESSAGE value="automatické přidání termínu" />
-    <option name="LAST_COMMIT_MESSAGE" value="automatické přidání termínu" />
+    <MESSAGE value="ukol03" />
+    <option name="LAST_COMMIT_MESSAGE" value="ukol03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
